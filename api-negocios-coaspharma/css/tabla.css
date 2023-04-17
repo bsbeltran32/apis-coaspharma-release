@@ -1,0 +1,55 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Se le definen atributos al espacio del titulo */
+.titulo{
+    background-color: #005AA5;
+    width: 115%;
+
+
+}
+/* Se le define atributos al titulo */
+#title{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    color: whitesmoke;
+}
+table td{
+    border: 1px;
+    border-style: solid;
+}
+#tabla-excel {
+    text-align: center;
+    font-size: 0.7vw;
+    white-space: pre-line;
+    width: 100%;
+    margin-left: 10px;
+  }
+#tabla-excel th{
+    vertical-align: middle;
+    word-wrap: break-word;
+    white-space: pre-line; 
+}
+
+#tabla-excel th:nth-child(6),
+#tabla-excel td:nth-child(6) {
+  width: 60px;
+  max-width: 80px;
+  white-space:pre-line;
+}
+
+    .helmet{
+        height: 20%;
+        color: white;
+        background-color: black;
+    }
+
+.boton{
+    background-color: #005AA5;
+    margin-right: 5px;
+}
+
+#boostrap-row-buttons{
+    width: 115%;
+}
