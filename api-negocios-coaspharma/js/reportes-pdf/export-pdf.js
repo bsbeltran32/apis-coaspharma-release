@@ -13,19 +13,21 @@ document.getElementById('button-pdf').onclick = function () {
   })
   Toast.fire({
     icon: 'success',
-    title: 'Exportado'
+    title: 'Exportando'
   })
 
   // Generar archivo PDF de tabla HTML
   var element = document.getElementById('tabla-excel');
   element.style.width = "80%";
+  element.style.height = "100%";
+  loggin = true
 
   var opt = {
     margin: 0.2,
     filename: 'Reporte.pdf',
     image: { type: 'txt', quality: 1},
-    html2canvas: { scale: 1.3,  windowWidth: window.innerWidth, windowHeight: window.innerHeight},
-    jsPDF: { unit: 'in', format: 'a2', orientation: 'landscape', enableLinks: true},
+    html2canvas: { scale: 1.5,  windowWidth: window.innerWidth, windowHeight: window.innerHeight},
+    jsPDF: { unit: 'in', format: 'a1', orientation: 'landscape', enableLinks: true},
   };
   html2pdf(element, opt);
 
