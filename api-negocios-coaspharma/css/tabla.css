@@ -1,72 +1,107 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* Se le definen atributos al espacio del titulo */
-.titulo{
-    background: rgb(1,47,110);
-    background: linear-gradient(0deg, rgba(1,47,110,1) 0%, rgba(0,90,165,1) 25%, rgba(0,116,255,1) 100%);
-    width: 115%;
-    height: 70px;
-    border-radius: 2px;
-
-
+.titulo {
+  background: rgb(14, 78, 129);
+  background: linear-gradient(
+    0deg,
+    rgba(14, 78, 129, 1) 0%,
+    rgba(24, 90, 142, 1) 22%,
+    rgba(18, 101, 167, 1) 57%,
+    rgba(44, 131, 204, 1) 100%
+  );
+  width: 115%;
+  height: 70px;
+  border-radius: 2px;
+  padding-left: 10%;
 }
-#logo-farmadisa{
-    margin-top: 0.35%;
-    margin-left: 2%;
-    width: 80.64px;
-    height:50px;
-    border-radius: 7px;
+#logo-farmadisa {
+  margin-top: 0.35%;
+  margin-left: 2%;
+  width: 80.64px;
+  height: 50px;
+  border-radius: 7px;
 }
-#logo-erp{
-    margin-top: 0.31%;
-    margin-bottom: 20px;
-    height: 50px;
-    border-radius: 7px;
+#logo-erp {
+  margin-top: 0.31%;
+  margin-bottom: 20px;
+  height: 50px;
+  border-radius: 7px;
 }
 /* Se le define atributos al titulo */
-#title{
-    padding-top: 0.5%;
-    color: whitesmoke;
-    font-size: 35px;
-    font-weight: bold;
-    
+#title {
+  padding-top: 0.5%;
+  
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: bold;
 }
-table td{
-    border: 1px;
-    border-style: solid;
+table td {
+  border: 1px;
+  border-style: solid;
 }
 #tabla-excel {
-    text-align: center;
-    font-size: 0.7vw;
-    white-space: pre-line;
-    width: 100%;
-    margin-left: 10px;
-  }
-#tabla-excel th{
-    vertical-align: middle;
-    word-wrap: break-word;
-    white-space: pre-line; 
+  text-align: center;
+  font-size: 12px;
+  white-space:pre-line;
+  width: 100%;
+  margin-left: 1px;
+}
+#footer-tabla-excel{
+  background-color: black;
+}
+#footer-tabla-excel select{
+  text-align: center;
+  width: 70px;
+}
+#tabla-excel th {
+  vertical-align: middle;
+  word-wrap: break-word;
+  white-space: pre-line;
 }
 
 #tabla-excel th:nth-child(6),
 #tabla-excel td:nth-child(6) {
   width: 60px;
   max-width: 80px;
-  white-space:pre-line;
+  white-space: pre-line;
 }
 
-    .helmet{
-        height: 20%;
-        color: white;
-        background-color: black;
-    }
-
-.boton{
-    background-color: #005AA5;
-    margin-right: 5px;
+.helmet {
+  height: 20%;
+  color: white;
+  background-color: black;
 }
 
-#boostrap-row-buttons{
-    width: 115%;
+.boton {
+  background-color: #005aa5;
+  margin-right: 5px;
+}
+
+#boostrap-row-buttons {
+  width: 115%;
+}
+
+.box-left {
+  width: 36%;
+}
+.box-right {
+  width: 27%;
+}
+@media (max-width: 1920px) {
+  .box-left {
+    width: 31%;
+  }
+  .box-right {
+    width: 28%;
+  }
+}
+@media (max-width: 1366px) {
+  .box-left {
+    width: 26%;
+  }
+  .box-right {
+    width: 24%;
+  }
 }

@@ -28,9 +28,10 @@ app.get("/", (req, res) => {
 
 app.get("/json", (req, res) => {
   let consulta =
-    "select coddist, nomdist, codzona, nomzona, codlinea, nomlinea, periodo, mes, codclien, nitclien, nomclien, codprod, nomprod, nompres, sum(unidades_venta) as unidades_venta, sum(valores_venta) as valores_venta, sum(devoluciones) as devoluciones, sum(vr_devoluciones) as vr_devoluciones, sum(backorder) as backorder, sum(vr_backorder) as vr_backorder from vetmpven";
-  consulta +=
-    " group by coddist, nomdist, codzona, nomzona, codlinea, nomlinea, periodo, mes, codclien, nitclien, nomclien, codprod, nomprod, nompres";
+"select coddist, nomdist, codzona, nomzona, codlinea, nomlinea, periodo, mes, codclien, nitclien, nomclien, codprod, nomprod, nompres, sum(unidades_venta) as unidades_venta, sum(valores_venta) as valores_venta, sum(devoluciones) as devoluciones, sum(vr_devoluciones) as vr_devoluciones, sum(backorder) as backorder, sum(vr_backorder) as vr_backorder from vetmpven";
+consulta +=
+" group by coddist, nomdist, codzona, nomzona, codlinea, nomlinea, periodo, mes, codclien, nitclien, nomclien, codprod, nomprod, nompres";
+
 
   pool
     .query(consulta)
@@ -42,6 +43,12 @@ app.get("/json", (req, res) => {
     });
 });
 
+
+
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );
+
+
+
+
